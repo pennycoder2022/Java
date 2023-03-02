@@ -25,7 +25,7 @@ public class ANSIConsoleAppender extends ConsoleAppender {
 	private static final String	WARN_COLOUR =			PREFIX + FOREGROUND_YELLOW +SUFFIX;
 	private static final String	INFO_COLOUR =			PREFIX + FOREGROUND_GREEN + SUFFIX;
 	private static final String	DEBUG_COLOUR =			PREFIX + FOREGROUND_CYAN + 	SUFFIX;
-	private static final String	TRACE_COLOUR =			PREFIX + FOREGROUND_BLUE + 	SUFFIX;
+	private static final String	TRACE_COLOUR =			PREFIX + FOREGROUND_WHITE + SUFFIX;
 	
 	protected void subAppend(LoggingEvent event) {
 		this.qw.write(getColour(event.getLevel()));
